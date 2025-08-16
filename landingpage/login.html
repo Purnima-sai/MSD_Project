@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashBoost - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/branding/favicon.ico">
+    <style>
+        .login-page {
+            padding: 5rem 0;
+            background-color: var(--white);
+        }
+        
+        .login-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .login-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .login-header h1 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .social-login {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-btn {
+            flex: 1;
+            padding: 0.8rem;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .social-btn.google {
+            background: #fff;
+            border: 1px solid #ddd;
+            color: #444;
+        }
+        
+        .social-btn.facebook {
+            background: #3b5998;
+            color: white;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 1.5rem 0;
+            color: var(--gray);
+        }
+        
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .divider::before {
+            margin-right: 1rem;
+        }
+        
+        .divider::after {
+            margin-left: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.2);
+        }
+        
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-check {
+            display: flex;
+            align-items: center;
+        }
+        
+        .form-check-input {
+            margin-right: 0.5rem;
+        }
+        
+        .forgot-link {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+        
+        .signup-link {
+            text-align: center;
+            margin-top: 1.5rem;
+            color: var(--gray);
+        }
+        
+        .signup-link a {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>FlashBoost
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="study-modes.html">Study Modes</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="testimonials.html">Success Stories</a></li>
+                <li><a href="blog.html">Learning Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+                <a href="login.html" class="btn-login">Login</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-page">
+            <div class="container">
+                <div class="login-container">
+                    <div class="login-header">
+                        <h1>Welcome Back</h1>
+                        <p>Log in to continue your learning journey</p>
+                    </div>
+                    
+                    <div class="social-login">
+                        <a href="#" class="social-btn google">
+                            <i class="fab fa-google"></i> Google
+                        </a>
+                        <a href="#" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                    </div>
+                    
+                    <div class="divider">
+                        or log in with email
+                    </div>
+                    
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" id="login-email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" class="form-control" required>
+                        </div>
+                        
+                        <div class="remember-forgot">
+                            <div class="form-check">
+                                <input type="checkbox" id="remember-me" class="form-check-input">
+                                <label for="remember-me" class="form-check-label">Remember me</label>
+                            </div>
+                            <a href="forgot-password.html" class="forgot-link">Forgot password?</a>
+                        </div>
+                        
+                        <bustton type="submit" class="btn btn-primary" style="width: 100%;">Log In</button>
+                    </form>
+                    
+                    <div class="signup-link">
+                        Don't have an account? <a href="signup.html">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation would go here
+            alert('Logged in successfully! Redirecting...');
+            // window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>

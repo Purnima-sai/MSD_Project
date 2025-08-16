@@ -1,55 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FlashBoost - Learn Faster, Together</title>
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashBoost - Learn Faster, Together</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="images/branding/favicon.ico">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>FlashBoost
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="studymodes.html">Study Modes</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="testimonials.html">Success Stories</a></li>
+                <li><a href="blog.html">Learning Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="./signup.html" class="btn-signup">Sign Up</a>
+                <a href="./login.html" class="btn-login">Login</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-<!-- ===== STICKY NAVBAR ===== -->
-<header>
-    <nav class="navbar">
-        <div class="logo">⚡ FlashBoost</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="features.html" target="_blank">Features</a></li>
-            <li><a href="about.html" target="_blank">About</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
-        </ul>
-        <div class="auth-buttons">
-            <a href="../signup2.html" class="btn-signup">Sign Up</a>
-            <a href="../login2.html" class="btn-login">Login</a>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Supercharge Your Learning with <span>FlashBoost</span></h1>
+            <p>Collaborate, create flashcards, and master topics — all in one place. Join thousands of students who are learning faster together.</p>
+            <div class="hero-buttons">
+                <a href="signup.html" class="btn btn-primary">Get Started Free</a>
+                <a href="features.html" class="btn btn-secondary">Explore Features</a>
+            </div>
         </div>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-    </nav>
-</header>
-
-<!-- ===== HERO ===== -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Supercharge Your Learning with <span>FlashBoost</span></h1>
-        <p>Collaborate, create flashcards, and master topics — all in one place.</p>
-        <div class="hero-buttons">
-            <a href="signup.html" class="btn-primary">Get Started</a>
-            <a href="features.html" target="_blank" class="btn-secondary">Explore Features</a>
+        <div class="hero-image">
+            <img src="images/hero/hero-home.jpg" alt="Students using FlashBoost">
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-    <p>© 2025 FlashBoost | Designed by Purnima</p>
-</footer>
-<script>
-    document.getElementById("menu-toggle").addEventListener("click", () => {
-    document.querySelector(".nav-links").classList.toggle("active");
-});
+    <section class="features-preview">
+        <div class="container">
+            <h2 class="section-title text-center">Why Choose FlashBoost?</h2>
+            <p class="text-center">Our innovative platform combines proven learning techniques with cutting-edge technology</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain-circuit"></i>
+                    </div>
+                    <h3>Spaced Repetition</h3>
+                    <p>Our algorithm optimizes review timing to help you remember information longer with less effort.</p>
+                    <a href="./studymodes.html#spaced-repetition" class="learn-more">Learn more →</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-class"></i>
+                    </div>
+                    <h3>Collaborative Learning</h3>
+                    <p>Study with classmates or join global learning communities to enhance your understanding.</p>
+                    <a href="features.html#collaboration" class="learn-more">Learn more →</a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Assistant</h3>
+                    <p>Get personalized study recommendations and automatic flashcard generation.</p>
+                    <a href="features.html#ai-assistant" class="learn-more">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</script>
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Learning?</h2>
+            <p>Join over 500,000 students and educators who are already using FlashBoost to study smarter, not harder.</p>
+            <div class="cta-buttons">
+                <a href="signup.html" class="btn btn-primary">Start Free Trial</a>
+                <a href="pricing.html" class="btn btn-secondary">See Plans</a>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>FlashBoost</h3>
+                    <p>Making learning faster, easier, and more effective through collaborative flashcard technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="study-modes.html">Study Modes</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="./testimonals.html">Success Stories</a></li>
+                        <li><a href="updates.html">Updates</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Learning Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FlashBoost. All rights reserved. Designed with <i class="fas fa-heart"></i> by Purnima</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

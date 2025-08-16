@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashBoost - Learning Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="icon" href="images/branding/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>FlashBoost
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="study-modes.html">Study Modes</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="testimonials.html">Success Stories</a></li>
+                <li><a href="blog.html" class="active">Learning Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+                <a href="login.html" class="btn-login">Login</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Learning Blog</h1>
+                <p>Tips, strategies, and insights to help you learn more effectively</p>
+            </div>
+        </section>
+
+        <section class="blog-page">
+            <div class="container">
+                <div class="blog-header">
+                    <div class="blog-filter">
+                        <button class="active" data-filter="all">All Articles</button>
+                        <button data-filter="study-techniques">Study Techniques</button>
+                        <button data-filter="productivity">Productivity</button>
+                        <button data-filter="case-studies">Case Studies</button>
+                        <button data-filter="announcements">Announcements</button>
+                    </div>
+                </div>
+                
+                <div class="blog-grid">
+                    <article class="blog-post study-techniques">
+                        <div class="blog-post-image">
+                            <img src="images/blog/post1-thumbnail.jpg" alt="Spaced repetition technique">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">Study Techniques</span>
+                            <h3>The Science Behind Spaced Repetition</h3>
+                            <p class="blog-post-excerpt">Discover how spacing out your study sessions can dramatically improve long-term retention of information.</p>
+                            <div class="blog-post-meta">
+                                <span class="reading-time">5 min read</span>
+                                <span class="blog-post-date">March 22, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post productivity">
+                        <div class="blog-post-image">
+                            <img src="images/blog/post2-thumbnail.jpg" alt="Productive study session">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">Productivity</span>
+                            <h3>10 Ways to Make Your Study Sessions More Effective</h3>
+                            <p class="blog-post-excerpt">Practical tips to maximize your learning in minimal time, backed by cognitive science research.</p>
+                            <div class="blog-post-meta">
+                                <span class="reading-time">8 min read</span>
+                                <span class="blog-post-date">March 15, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post case-studies">
+                        <div class="blog-post-image">
+                            <img src="images/blog/post3-thumbnail.jpg" alt="Medical students studying">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">Case Studies</span>
+                            <h3>How Medical Students Are Using FlashBoost</h3>
+                            <p class="blog-post-excerpt">A look at how future doctors are mastering vast amounts of information with smart flashcard techniques.</p>
+                            <div class="blog-post-meta">
+                                <span class="reading-time">6 min read</span>
+                                <span class="blog-post-date">March 8, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post announcements">
+                        <div class="blog-post-image">
+                            <img src="images/blog/post4-thumbnail.jpg" alt="New features">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">Announcements</span>
+                            <h3>New AI Features Coming Next Month</h3>
+                            <p class="blog-post-excerpt">Get a sneak peek at our upcoming AI-powered study tools that will personalize your learning experience.</p>
+                            <div class="blog-post-meta">
+                                <span class="reading-time">4 min read</span>
+                                <span class="blog-post-date">March 1, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post study-techniques">
+                        <div class="blog-post-image">
+                            <img src="images/blog/post5-thumbnail.jpg" alt="Active recall technique">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">Study Techniques</span>
+                            <h3>Why Active Recall Beats Passive Review</h3>
+                            <p class="blog-post-excerpt">The neuroscience behind why testing yourself is far more effective than re-reading notes.</p>
+                            <div class="blog-post-meta">
+                                <span class="reading-time">7 min read</span>
+                                <span class="blog-post-date">February 22, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post productivity">
+                        <div class="blog-post-image">
+                            <img src="images/blog/post6-thumbnail.jpg" alt="Study schedule">
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="blog-post-category">Productivity</span>
+                            <h3>Creating the Perfect Study Schedule</h3>
+                            <p class="blog-post-excerpt">How to balance study sessions with breaks for optimal learning without burnout.</p>
+                            <div class="blog-post-meta">
+                                <span class="reading-time">9 min read</span>
+                                <span class="blog-post-date">February 15, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/blog.js"></script>
+</body>
+</html>
